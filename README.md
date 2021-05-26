@@ -9,7 +9,17 @@ Here is the docs from the source [Ansible](https://docs.ansible.com/ansible/late
 
 
 ## Usage
-I have used my Macbook as the control node and Digital Oceans ubuntu droplets as managed nodes
+I have used my Macbook as the control node and Digital Oceans ubuntu droplets as managed nodes  
+In hosts add your managed nodes and test with  
+```bash
+ansible -m ping all
+```  
+You should receive an output  
+  
+xxxxxxxxxxxxxx | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
 
 
 
