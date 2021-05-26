@@ -1,0 +1,5 @@
+[jenkins_server]
+xxxxxxxxxxxxxxxxx
+
+[jenkins_server:vars]
+ansible_python_interpreter=/usr/bin/python3

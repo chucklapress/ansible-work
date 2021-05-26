@@ -1,0 +1,9 @@
+---
+ - name: Playbook to remove Node
+   hosts: jenkins_server
+   become: true
+   tasks:
+    - name: Ansible apt remove nodejs
+      apt:
+        name: nodejs
+        state: absent
